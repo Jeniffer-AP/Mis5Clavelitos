@@ -1,0 +1,165 @@
+/* DISEÑO PARA DESKTOP */
+@media screen and (min-width: 992px){
+    
+    /* FONDO */
+    body{
+        background-image: url("../Images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* LOGO */
+    .logo{
+        width: 250px;
+    }
+
+    /* HEADER */
+    #menu_ham{
+        display: none;
+    }
+    .label_ham{
+        display: none;
+    }
+
+    header{
+        text-align: center;
+        align-items: center;
+        background-color: transparent;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    nav{
+        text-align: center;
+        .nav{
+            background-color: $verde;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            top: 200px;
+        }
+    }
+
+    .nav{
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            overflow: visible;
+        }
+    }
+
+    div{
+        .btn{
+            border: none;
+            background-color: transparent;
+            padding: 13px;
+            &:hover{
+                color: $amarillo;
+                background-color: transparent;
+            }
+        }
+        .smenu{
+            margin-top: 0;
+            background-color: $verde_aqua;
+        }
+    }
+
+    /* Animación para el header al hacer scroll abajo */
+    header.abajo{
+            .logo{
+                display: none;
+            }
+            nav{
+                div{
+                    background-color: $verde_aqua;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    li{
+                        padding: 0;
+                        a{
+                            &:hover{
+                                color: $verde;
+                            }
+                        }
+                    }
+                }
+                .smenu{
+                    margin-top: 50px;
+                    left: 40%;
+                    right: 40%;
+                    width: 20%;
+                }
+            }
+    }
+
+    header.abajo{
+        nav{
+            .nav{
+                div{
+                    li{
+                        .smenu{
+                            a{
+                                &:hover{
+                                    color: $blanco;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* FOOTER */
+    footer{
+        .nav{
+            li{
+                a{
+                    &:hover{
+                        color: $amarillo;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTENT */
+    #platos{
+        margin-top: 57px;
+        margin-bottom: 35px;
+        padding: 0;
+    }
+
+    div{
+        .p_entradas{
+            font-size: 60px;
+            right: auto;
+            left: auto;
+        }
+    }
+
+    #entradas_derecha{
+        background-color: $amarillo;
+        padding-left: 40px;
+    }
+    
+    #entradas_izquierda{
+        background-color: $amarillo;
+        padding-right: 40px;
+    }
+    
+    .img_menu{
+        width: 582px;
+        height: 320px;
+    }
+}

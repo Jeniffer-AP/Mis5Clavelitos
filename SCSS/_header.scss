@@ -1,0 +1,144 @@
+/* DISEÑO PARA MOBILE */
+header{
+  background-color: $verde;
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  text-align: end;
+  .nav{
+    display: none;
+    margin-top: 0;
+    padding: 0;
+  }
+  input{
+    display: none;
+  }
+  ul{
+    li{
+      &:hover{
+        filter: brightness(110%);
+      }
+    }
+  }
+}
+
+input:checked  ~ .nav{
+  display: block;
+}
+
+input:checked ~ .label_ham{
+  background: $verde_aqua;
+}
+
+.label_ham{
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid $blanco;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  font-size: 30px;
+  color: $blanco;
+  background-color: $verde;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+/* Menú hamburguesa */
+.nav{
+  position: absolute;
+  top: 128px;
+  right: 0;
+  width: 100%;
+}
+
+.menu{
+  width: 100%;
+  overflow: hidden;
+}
+
+div{
+  .item{
+    overflow: hidden;
+  }
+  .btn{
+    display: block;
+    padding: 15px;
+    background-color: $verde;
+    color: $blanco;
+    position: relative;
+    border-radius: 0px;
+    border-bottom: 1px solid $blanco;
+    font-family: 'Raleway', sans-serif;
+
+    &:hover{
+      background-color: $verde;
+      color: $blanco;
+    }
+  }
+}
+
+div{
+  .smenu{
+    background: $verde_aqua;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+    font-size: 17px;
+    font-family: $fontPrimary;
+    a{
+      display: block;
+      padding: 15px;
+      color: $blanco;
+      font-size: 15px;
+      position: relative;
+      border-bottom: 1px solid $verde;
+      text-align: center;
+      text-decoration: none;
+        &:before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background: $amarillo;
+        left: 0;
+        top: 0;
+        transition: 0.3s;
+        opacity: 0;
+      }
+      &:hover{
+        &:before{
+          opacity:1;
+        }
+      }
+    }
+  }
+}
+
+div{
+  .item{
+    &:target{
+      .smenu{
+        max-height: 350px;
+      }
+    }
+  }
+}
+
+a{
+  &:visited{
+    color: $blanco;
+  }
+}
+
+li{
+  a{
+    text-decoration: none;
+  }
+}

@@ -95,6 +95,7 @@ input:checked ~ .label_ham {
 
   div .btn:hover{
     background-color: #005227;
+    color: #ffff;
   }
   
   div .smenu{
@@ -424,11 +425,9 @@ select:hover{
         padding: 0;
     }
 
-    /* header.abajo nav > div > li > a:hover{
-        
-        color: transparent;
-        text-shadow: 0 0 8px #005227;
-    } */
+    header.abajo nav > .nav > div > li > a:hover{
+        color: #005227;
+    }
 
     header.abajo .logo{
         display: none;
@@ -465,7 +464,7 @@ select:hover{
 
     div .smenu{
         margin-top: 0;
-        background-color: rgba(0, 0, 0, .5)
+        background-color: rgba(0,0,0,.5);
     }
 
     /* Estilos al footer */

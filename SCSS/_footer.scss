@@ -1,0 +1,25 @@
+/* FOOTER - DISEÑO PARA MOBILE */
+.footer{
+    background-color: $verde;
+    font-family: $fontPrimary;
+    height: 35px;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        padding: 8px;
+    }
+    li{
+        color: $blanco;
+        a{
+            color: $blanco;
+            &:hover{
+                color: $amarillo;
+            }
+        }
+    }
+}

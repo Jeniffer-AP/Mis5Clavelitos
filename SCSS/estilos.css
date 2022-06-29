@@ -1,0 +1,348 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* DISEÑO PARA MOBILE*/
+body {
+  background-image: url("../Images/fondo_mobile.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* DISEÑO PARA MOBILE */
+header {
+  background-color: #005227;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  text-align: end;
+}
+nav .nav {
+  display: none;
+  margin-top: 0;
+  padding: 0;
+}
+nav input {
+  display: none;
+}
+nav ul li:hover {
+  filter: brightness(110%);
+}
+
+input:checked ~ .nav {
+  display: block;
+}
+
+input:checked ~ .label_ham {
+  background: #03bb85;
+}
+
+.label_ham {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 30px;
+  color: white;
+  background-color: #005227;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+/* Menú hamburguesa */
+.nav {
+  position: absolute;
+  top: 128px;
+  right: 0;
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  overflow: hidden;
+}
+
+div .item {
+  overflow: hidden;
+}
+div .btn {
+  display: block;
+  padding: 15px;
+  background-color: #005227;
+  color: white;
+  position: relative;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  font-family: "Raleway", sans-serif;
+}
+div .btn:hover {
+  background-color: #005227;
+  color: white;
+}
+
+div .smenu {
+  background: #03bb85;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+}
+div .smenu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  position: relative;
+  border-bottom: 1px solid #005227;
+  text-align: center;
+  text-decoration: none;
+}
+div .smenu a:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background: #dcb943;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+div .smenu a:hover:before {
+  opacity: 1;
+}
+
+div .item:target .smenu {
+  max-height: 350px;
+}
+
+a:visited {
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* DISEÑO PARA MOBILE*/
+.logo {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* CONTENT - DISEÑO MOBILE*/
+#platos {
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+div .p_entradas {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: "Dancing script", cursive;
+  font-size: 30px;
+}
+
+#entradas_derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #03bb85;
+  padding: 0;
+  padding-left: 20px;
+}
+
+#entradas_izquierda {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: #03bb85;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.img_menu {
+  width: 300px;
+  height: 200px;
+}
+
+/* FOOTER - DISEÑO PARA MOBILE */
+.footer {
+  background-color: #005227;
+  font-family: "Raleway", sans-serif;
+  height: 35px;
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 0;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  padding: 8px;
+}
+.footer li {
+  color: white;
+}
+.footer li a {
+  color: white;
+}
+.footer li a:hover {
+  color: #dcb943;
+}
+
+/* DISEÑO PARA DESKTOP */
+@media screen and (min-width: 992px) {
+  /* FONDO */
+  body {
+    background-image: url("../Images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* LOGO */
+  .logo {
+    width: 250px;
+  }
+
+  /* HEADER */
+  #menu_ham {
+    display: none;
+  }
+
+  .label_ham {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  nav {
+    text-align: center;
+  }
+  nav .nav {
+    background-color: #005227;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 200px;
+  }
+
+  .nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: visible;
+  }
+
+  div .btn {
+    border: none;
+    background-color: transparent;
+    padding: 13px;
+  }
+  div .btn:hover {
+    color: #dcb943;
+    background-color: transparent;
+  }
+  div .smenu {
+    margin-top: 0;
+    background-color: #03bb85;
+  }
+
+  /* Animación para el header al hacer scroll abajo */
+  header.abajo .logo {
+    display: none;
+  }
+  header.abajo nav div {
+    background-color: #03bb85;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  header.abajo nav div li {
+    padding: 0;
+  }
+  header.abajo nav div li a:hover {
+    color: #005227;
+  }
+  header.abajo nav .smenu {
+    margin-top: 50px;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+  }
+
+  header.abajo nav .nav div li .smenu a:hover {
+    color: white;
+  }
+
+  /* FOOTER */
+  footer .nav li a:hover {
+    color: #dcb943;
+  }
+
+  /* CONTENT */
+  #platos {
+    margin-top: 57px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  div .p_entradas {
+    font-size: 60px;
+    right: auto;
+    left: auto;
+  }
+
+  #entradas_derecha {
+    background-color: #dcb943;
+    padding-left: 40px;
+  }
+
+  #entradas_izquierda {
+    background-color: #dcb943;
+    padding-right: 40px;
+  }
+
+  .img_menu {
+    width: 582px;
+    height: 320px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
