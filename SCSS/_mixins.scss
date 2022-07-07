@@ -1,0 +1,4 @@
+@mixin flexbox {
+    display: map-get($mapa,mostrar);
+    justify-content: map-get($mapa,espacio);
+}

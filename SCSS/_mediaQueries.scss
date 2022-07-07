@@ -142,24 +142,19 @@
 
     div{
         .p_entradas{
-            font-size: 60px;
-            right: auto;
-            left: auto;
+            font-size: map-get($mapa,tamaño_desktop);
         }
     }
 
     #entradas_derecha{
         background-color: $amarillo;
-        padding-left: 40px;
     }
     
     #entradas_izquierda{
         background-color: $amarillo;
-        padding-right: 40px;
     }
     
     .img_menu{
-        width: 582px;
-        height: 320px;
+        height: map-get($mapa,alto_desktop);
     }
 }

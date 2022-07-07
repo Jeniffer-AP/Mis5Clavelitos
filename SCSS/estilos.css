@@ -150,6 +150,12 @@ li a {
   margin-left: 20px;
 }
 
+#entradas_izquierda, #entradas_derecha {
+  padding-left: 20px;
+  background-color: #03bb85;
+  padding: 0;
+}
+
 /* CONTENT - DISEÑO MOBILE*/
 #platos {
   margin-bottom: 35px;
@@ -157,35 +163,36 @@ li a {
 }
 
 div .p_entradas {
+  color: white;
+  font-family: "Dancing script", cursive;
+  margin-right: auto;
+  margin-left: auto;
+  /* Aplicamos el map */
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
-  font-family: "Dancing script", cursive;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 #entradas_derecha {
+  /* Aplicamos el MIXIN */
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  background-color: #03bb85;
-  padding: 0;
-  padding-left: 20px;
+  /* Aplicamos el EXTEND */
+  flex-direction: row;
 }
 
 #entradas_izquierda {
+  /* Aplicamos el MIXIN */
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: #03bb85;
-  padding: 0;
-  padding-right: 20px;
+  /* Aplicamos el EXTEND */
+  flex-direction: row-reverse;
 }
 
 .img_menu {
-  width: 300px;
-  height: 200px;
+  width: 50%;
+  height: 220px;
 }
 
 /* FOOTER - DISEÑO PARA MOBILE */
@@ -326,23 +333,18 @@ div .p_entradas {
   }
 
   div .p_entradas {
-    font-size: 60px;
-    right: auto;
-    left: auto;
+    font-size: 70px;
   }
 
   #entradas_derecha {
     background-color: #dcb943;
-    padding-left: 40px;
   }
 
   #entradas_izquierda {
     background-color: #dcb943;
-    padding-right: 40px;
   }
 
   .img_menu {
-    width: 582px;
     height: 320px;
   }
 }/*# sourceMappingURL=estilos.css.map */
