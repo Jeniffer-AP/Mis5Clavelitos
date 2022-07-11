@@ -157,6 +157,62 @@ li a {
 }
 
 /* CONTENT - DISEÑO MOBILE*/
+/* PÁGINA "INICIO" */
+section p {
+  color: white;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  margin: 30px;
+}
+section h3, section h2 {
+  color: #03bb85;
+  font-family: "Dancing script", cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+}
+section iframe {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  border: 5px solid #dcb943;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+section h1 {
+  font-family: "Dancing script", cursive;
+  color: white;
+  font-size: 40px;
+  margin-top: 0;
+}
+section h4 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  margin-top: 30px;
+}
+
+/* PÁGINA "NOSOTROS" */
+#dueña {
+  background-color: #dcb943;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  right: 0;
+  left: 0;
+  margin-bottom: 60px;
+}
+
+#img_dueña {
+  height: 250px;
+}
+
+/* CARPETA "MENÚ_PLATOS" */
 #platos {
   margin-bottom: 35px;
   padding: 0;
@@ -193,6 +249,80 @@ div .p_entradas {
 .img_menu {
   width: 50%;
   height: 220px;
+}
+
+/* PÁGINA "GALERÍA" */
+#cont_galeria {
+  margin-bottom: 50px;
+}
+
+.fotos {
+  width: 350px;
+  height: 250px;
+  border: 5px solid #dcb943;
+  text-align: center;
+}
+
+#galeria {
+  text-align: center;
+  margin: 20px;
+}
+
+/* PÁGINA "CONTACTO" */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+input, textarea {
+  outline: none;
+  border: 0;
+  width: 380px;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+select {
+  font-family: "Raleway", sans-serif;
+  width: 380px;
+  padding: 10px;
+  border: solid 1.5px #ccc;
+}
+select:focus {
+  border-color: #dcb943;
+}
+select:hover {
+  color: #dcb943;
+}
+
+.campo {
+  border: solid 1.5px #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.campo:focus {
+  border-color: #dcb943;
+}
+
+.center_content {
+  text-align: center;
+}
+
+.boton {
+  padding: 10px;
+  background-color: #dcb943;
+  font-family: "Dancing script", cursive;
+  color: white;
+  font-size: 30px;
+}
+
+#cont_form {
+  width: 440px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 /* FOOTER - DISEÑO PARA MOBILE */
@@ -326,6 +456,31 @@ div .p_entradas {
   }
 
   /* CONTENT */
+  /* PÁGINA "INICIO" */
+  #presentacion {
+    padding-right: 50px;
+    margin-top: 60px;
+  }
+
+  section iframe {
+    width: 450px;
+    height: 300px;
+    margin-top: 110px;
+  }
+
+  /* PÁGINA "NOSOTROS" */
+  #historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+  }
+
+  #dueña {
+    margin-top: 80px;
+  }
+
+  /* CARPETA "MENÚ_PLATOS" */
   #platos {
     margin-top: 57px;
     margin-bottom: 35px;
@@ -346,5 +501,21 @@ div .p_entradas {
 
   .img_menu {
     height: 320px;
+  }
+
+  /* PÁGINA "GALERÍA" */
+  #cont_galeria {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  #galeria {
+    margin: 20px;
+  }
+
+  /* PÁGINA "CONTACTO" */
+  #cont_form {
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=estilos.css.map */

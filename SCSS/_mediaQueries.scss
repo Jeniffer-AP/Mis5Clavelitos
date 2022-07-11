@@ -134,6 +134,33 @@
     }
 
     /* CONTENT */
+    /* PÁGINA "INICIO" */
+    #presentacion{
+        padding-right: 50px;
+        margin-top: 60px;
+    }
+
+    section{
+        iframe{
+            width: 450px;
+            height: 300px;
+            margin-top: 110px;
+        }
+    }
+
+    /* PÁGINA "NOSOTROS" */
+    #historia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px;
+    }
+
+    #dueña{
+        margin-top: 80px;
+    }
+
+    /* CARPETA "MENÚ_PLATOS" */
     #platos{
         margin-top: 57px;
         margin-bottom: 35px;
@@ -156,5 +183,21 @@
     
     .img_menu{
         height: map-get($mapa,alto_desktop);
+    }
+
+    /* PÁGINA "GALERÍA" */
+    #cont_galeria{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    #galeria{
+        margin: 20px;
+    }
+
+    /* PÁGINA "CONTACTO" */
+    #cont_form{
+        margin-top: 80px;
+        margin-bottom: 50px;
     }
 }

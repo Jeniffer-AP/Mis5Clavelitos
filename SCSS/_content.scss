@@ -1,4 +1,62 @@
 /* CONTENT - DISEÑO MOBILE*/
+/* PÁGINA "INICIO" */
+section{
+    p{
+        color: $blanco;
+        font-weight: bolder;
+        font-family: $fontPrimary;
+        font-size: 20px;
+        line-height: 1.8;
+        text-align: center;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        margin: 30px;
+    }
+    h3, h2{
+        color: $verde_aqua;
+        font-family: $cursiva;
+        font-size: 50px;
+        text-align: center;
+        margin: 30px;
+    }
+    iframe{
+        width: 400px;
+        height: 250px;
+        border-radius: 5px;
+        border: 5px solid $amarillo;
+        margin: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+    h1{
+        font-family: $cursiva;
+        color: $blanco;
+        font-size: 40px;
+        margin-top: 0;
+    }
+    h4{
+        font-family: $fontPrimary;
+        color: $blanco;
+        margin-top: 30px;
+    }
+}
+
+/* PÁGINA "NOSOTROS" */
+#dueña{
+    background-color: $amarillo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    right: 0;
+    left: 0;
+    margin-bottom: 60px;
+}
+
+#img_dueña{
+    height: 250px;
+}
+
+/* CARPETA "MENÚ_PLATOS" */
 #platos{
     margin-bottom: 35px;
     padding: 0;
@@ -37,4 +95,78 @@ div{
 .img_menu{
     width: map-get($mapa,ancho);
     height: map-get($mapa,alto_mobile);
+}
+
+/* PÁGINA "GALERÍA" */
+#cont_galeria{
+    margin-bottom: 50px;
+}
+
+.fotos{
+    width: 350px;
+    height: 250px;
+    border: 5px solid $amarillo;
+    text-align: center;
+}
+
+#galeria{
+    text-align: center;
+    margin: 20px;
+}
+
+/* PÁGINA "CONTACTO" */
+form{
+    background-color: $blanco;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: $fontPrimary;
+}
+
+input, textarea{
+    outline: none;
+    border: 0;
+    width: 380px;
+    font-family: $fontPrimary;
+    color: $negro;
+}
+
+select{
+    font-family: $fontPrimary;
+    width: 380px;
+    padding: 10px;
+    border: solid 1.5px #ccc;
+    &:focus{
+        border-color: $amarillo;
+    }
+    &:hover{
+        color: $amarillo;
+    }
+}
+
+.campo{
+    border: solid 1.5px #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    &:focus{
+        border-color: $amarillo;
+    }
+}
+
+.center_content{
+    text-align: center;
+}
+
+.boton{
+    padding: 10px;
+    background-color: $amarillo;
+    font-family: $cursiva;
+    color: $blanco;
+    font-size: 30px;
+}
+
+#cont_form{
+    width: 440px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
