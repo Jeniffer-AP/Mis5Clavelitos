@@ -59,7 +59,7 @@
         .btn{
             border: none;
             background-color: transparent;
-            padding: 13px;
+
             &:hover{
                 color: $amarillo;
                 background-color: transparent;
@@ -68,6 +68,17 @@
         .smenu{
             margin-top: 0;
             background-color: $verde_aqua;
+            a{
+                height: 50px;
+                padding: 15px;
+            }
+        }
+        .item{
+            &:hover{
+                .smenu{
+                    max-height: 350px;
+                }
+            }
         }
     }
 
@@ -142,7 +153,7 @@
 
     section{
         iframe{
-            width: 450px;
+            /*width: 450px;*/
             height: 300px;
             margin-top: 110px;
         }
@@ -156,8 +167,9 @@
         padding-right: 50px;
     }
 
-    #dueña{
+    #duena{
         margin-top: 80px;
+        width: 50%;
     }
 
     /* CARPETA "MENÚ_PLATOS" */
@@ -187,16 +199,18 @@
 
     /* PÁGINA "GALERÍA" */
     #cont_galeria{
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 60px;
     }
 
-    #galeria{
-        margin: 20px;
+    .fotos{
+        width: 90%;
+        height: 250px;
     }
 
     /* PÁGINA "CONTACTO" */
     #cont_form{
+        width: 40%;
         margin-top: 80px;
         margin-bottom: 50px;
     }

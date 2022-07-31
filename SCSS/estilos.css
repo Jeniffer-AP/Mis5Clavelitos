@@ -86,6 +86,7 @@ div .item {
 div .btn {
   display: block;
   padding: 15px;
+  height: 50px;
   background-color: #005227;
   color: white;
   position: relative;
@@ -108,7 +109,8 @@ div .smenu {
 }
 div .smenu a {
   display: block;
-  padding: 15px;
+  padding: 10px;
+  height: 40px;
   color: white;
   font-size: 15px;
   position: relative;
@@ -176,7 +178,7 @@ section h3, section h2 {
   margin: 30px;
 }
 section iframe {
-  width: 400px;
+  width: 90%;
   height: 250px;
   border-radius: 5px;
   border: 5px solid #dcb943;
@@ -197,18 +199,19 @@ section h4 {
 }
 
 /* PÁGINA "NOSOTROS" */
-#dueña {
+#duena {
   background-color: #dcb943;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  right: 0;
-  left: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 60px;
+  width: 90%;
 }
 
-#img_dueña {
+#img_duena {
   height: 250px;
 }
 
@@ -257,15 +260,17 @@ div .p_entradas {
 }
 
 .fotos {
-  width: 350px;
-  height: 250px;
+  width: 85%;
+  height: auto;
   border: 5px solid #dcb943;
   text-align: center;
 }
 
 #galeria {
   text-align: center;
-  margin: 20px;
+  margin: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* PÁGINA "CONTACTO" */
@@ -280,14 +285,14 @@ form {
 input, textarea {
   outline: none;
   border: 0;
-  width: 380px;
+  width: 100%;
   font-family: "Raleway", sans-serif;
   color: #000;
 }
 
 select {
   font-family: "Raleway", sans-serif;
-  width: 380px;
+  width: 100%;
   padding: 10px;
   border: solid 1.5px #ccc;
 }
@@ -320,7 +325,7 @@ select:hover {
 }
 
 #cont_form {
-  width: 440px;
+  width: 90%;
   margin-top: 10px;
   margin-bottom: 60px;
 }
@@ -361,21 +366,17 @@ select:hover {
     background-size: cover;
     background-position: center;
   }
-
   /* LOGO */
   .logo {
     width: 250px;
   }
-
   /* HEADER */
   #menu_ham {
     display: none;
   }
-
   .label_ham {
     display: none;
   }
-
   header {
     text-align: center;
     align-items: center;
@@ -386,7 +387,6 @@ select:hover {
     width: 100%;
     transition: 0.5s;
   }
-
   nav {
     text-align: center;
   }
@@ -399,18 +399,15 @@ select:hover {
     align-items: center;
     top: 200px;
   }
-
   .nav .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     overflow: visible;
   }
-
   div .btn {
     border: none;
     background-color: transparent;
-    padding: 13px;
   }
   div .btn:hover {
     color: #dcb943;
@@ -420,7 +417,13 @@ select:hover {
     margin-top: 0;
     background-color: #03bb85;
   }
-
+  div .smenu a {
+    height: 50px;
+    padding: 15px;
+  }
+  div .item:hover .smenu {
+    max-height: 350px;
+  }
   /* Animación para el header al hacer scroll abajo */
   header.abajo .logo {
     display: none;
@@ -445,29 +448,24 @@ select:hover {
     right: 40%;
     width: 20%;
   }
-
   header.abajo nav .nav div li .smenu a:hover {
     color: white;
   }
-
   /* FOOTER */
   footer .nav li a:hover {
     color: #dcb943;
   }
-
   /* CONTENT */
   /* PÁGINA "INICIO" */
   #presentacion {
     padding-right: 50px;
     margin-top: 60px;
   }
-
   section iframe {
-    width: 450px;
+    /*width: 450px;*/
     height: 300px;
     margin-top: 110px;
   }
-
   /* PÁGINA "NOSOTROS" */
   #historia {
     display: flex;
@@ -475,46 +473,40 @@ select:hover {
     justify-content: center;
     padding-right: 50px;
   }
-
-  #dueña {
+  #duena {
     margin-top: 80px;
+    width: 50%;
   }
-
   /* CARPETA "MENÚ_PLATOS" */
   #platos {
     margin-top: 57px;
     margin-bottom: 35px;
     padding: 0;
   }
-
   div .p_entradas {
     font-size: 70px;
   }
-
   #entradas_derecha {
     background-color: #dcb943;
   }
-
   #entradas_izquierda {
     background-color: #dcb943;
   }
-
   .img_menu {
     height: 320px;
   }
-
   /* PÁGINA "GALERÍA" */
   #cont_galeria {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 60px;
   }
-
-  #galeria {
-    margin: 20px;
+  .fotos {
+    width: 90%;
+    height: 250px;
   }
-
   /* PÁGINA "CONTACTO" */
   #cont_form {
+    width: 40%;
     margin-top: 80px;
     margin-bottom: 50px;
   }
